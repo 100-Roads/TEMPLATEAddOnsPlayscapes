@@ -636,22 +636,22 @@
          "name":"floorLayer",
          "objects":[
                 {
-                 "class":"",
                  "height":61.7182656893848,
                  "id":1,
                  "name":"CampusPopup1",
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":94.0342048645299,
                  "x":32.5930788024651,
                  "y":544.561134813843
                 }, 
                 {
-                 "class":"",
                  "height":63.2583224529155,
                  "id":2,
                  "name":"CampusPopup2",
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":94.7705725233182,
                  "x":4832.50215474941,
@@ -725,7 +725,7 @@
          "value":"Current map is the sole property of 100 Roads Inc. All rights are reserved by 100 Roads inc. All contents of the map may not be reproduced, distributed (for sale or otherwise), or create derivative works of the copyrighted work without the express written permission of 100 Roads Inc."
         }],
  "renderorder":"right-down",
- "tiledversion":"1.9.2",
+ "tiledversion":"1.8.4",
  "tileheight":32,
  "tilesets":[
         {
@@ -792,6 +792,6 @@
         }],
  "tilewidth":32,
  "type":"map",
- "version":"1.9",
+ "version":"1.8",
  "width":156
 }
