@@ -35,6 +35,25 @@ WA.room.onEnterLayer('message-1').subscribe(() => {
   })
   WA.room.onLeaveLayer('message-3').subscribe(closePopup)
 
+  //Popup Lake campus
+  WA.room.onEnterLayer('message-lake').subscribe(() => {
+    currentPopup = WA.ui.openPopup("PopupLake","Campus",[]);
+  })
+  WA.room.onLeaveLayer('message-lake').subscribe(closePopup)
+
+
+  //Popup Park campus
+WA.room.onEnterLayer('message-park-1').subscribe(() => {
+  currentPopup = WA.ui.openPopup("PopupPark1","Campus",[]);
+})
+WA.room.onLeaveLayer('message-park-1').subscribe(closePopup)
+
+//Popup Park campus
+WA.room.onEnterLayer('message-park-2').subscribe(() => {
+  currentPopup = WA.ui.openPopup("PopupPark2","Campus",[]);
+})
+WA.room.onLeaveLayer('message-park-2').subscribe(closePopup)
+
 
 
 
