@@ -55,6 +55,12 @@ WA.room.onEnterLayer('message-park-2').subscribe(() => {
 WA.room.onLeaveLayer('message-park-2').subscribe(closePopup)
 
 
+//Popup Beach campus
+WA.room.onEnterLayer('message-beach').subscribe(() => {
+  currentPopup = WA.ui.openPopup("PopupBeach","Campus",[]);
+})
+WA.room.onLeaveLayer('message-beach').subscribe(closePopup)
+
 
 
 
