@@ -16,6 +16,54 @@ WA.onInit().then(() => {
         const time = today.getHours() + ":" + today.getMinutes();
         currentPopup = WA.ui.openPopup("clockPopup","It's " + time,[]);
     })
+// custom code
+
+//Popup Oncean campus
+WA.room.onEnterLayer('message-1').subscribe(() => {
+    currentPopup = WA.ui.openPopup("CampusPopup2","Campus",[]);
+  })
+  WA.room.onLeaveLayer('message-1').subscribe(closePopup)
+  
+  //Popup Oncean campus
+  WA.room.onEnterLayer('message-2').subscribe(() => {
+    currentPopup = WA.ui.openPopup("CampusPopup1","Campus",[]);
+  })
+  WA.room.onLeaveLayer('message-2').subscribe(closePopup)
+  //Popup Oncean campus
+  WA.room.onEnterLayer('message-3').subscribe(() => {
+    currentPopup = WA.ui.openPopup("CampusPopup","Campus",[]);
+  })
+  WA.room.onLeaveLayer('message-3').subscribe(closePopup)
+
+  //Popup Lake campus
+  WA.room.onEnterLayer('message-lake').subscribe(() => {
+    currentPopup = WA.ui.openPopup("PopupLake","Campus",[]);
+  })
+  WA.room.onLeaveLayer('message-lake').subscribe(closePopup)
+
+
+  //Popup Park campus
+WA.room.onEnterLayer('message-park-1').subscribe(() => {
+  currentPopup = WA.ui.openPopup("PopupPark1","Campus",[]);
+})
+WA.room.onLeaveLayer('message-park-1').subscribe(closePopup)
+
+//Popup Park campus
+WA.room.onEnterLayer('message-park-2').subscribe(() => {
+  currentPopup = WA.ui.openPopup("PopupPark2","Campus",[]);
+})
+WA.room.onLeaveLayer('message-park-2').subscribe(closePopup)
+
+
+//Popup Beach campus
+WA.room.onEnterLayer('message-beach').subscribe(() => {
+  currentPopup = WA.ui.openPopup("PopupBeach","Campus",[]);
+})
+WA.room.onLeaveLayer('message-beach').subscribe(closePopup)
+
+
+
+
 
     WA.room.onLeaveLayer('clockZone').subscribe(closePopup)
 
