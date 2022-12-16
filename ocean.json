@@ -793,7 +793,7 @@
         {
          "columns":31,
          "firstgid":10085,
-         "image":"..\/TEMPLATEAddOnsBasic\/tilesets\/decor-rugs.png",
+         "image":"tilesets\/decor-rugs.png",
          "imageheight":1120,
          "imagewidth":1023,
          "margin":0,
